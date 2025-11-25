@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoạt động ngoại khoá</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        h1 {
+            font-size: 1.2em;
+            margin-top: 20px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .achievement-list {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .link-section a {
+            display: block;
+            margin-bottom: 5px;
+            color: #ff0000; /* Approximate red color from image */
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Giới thiệu các hoạt động ngoại khoá</h1>
+    
+    <p>Trường THPT Nguyễn Bỉnh Khiêm có bề dày thành tích về học tập và các hoạt đọng thể thao, văn nghệ của thành phố.</p>
+    
+    <p>Các câu lạc bộ ngoại khoá hoạt động sôi nổi và luôn được nhà trường tạo điều kiện để sinh hoạt.</p>
+    
+    <p>Những năm qua, trường đạt nhiều thành tích trong các cuộc thi cấp thành phố, quận:</p>
+    
+    <ul class="achievement-list">
+        <li>03 HCV cấp thành phố môn Bơi lội</li>
+        <li>02 HCV, 06 HCB và 05 HCĐ cấp thành phố các môn Võ thuật</li>
+        <li>01 giải ba môn Bóng đá nam cấp thành phố</li>
+        <li>01 giải nhì, 02 giải ba Hội thi biểu diễn âm nhạc quận</li>
+    <img src="placeholder.jpg" alt="Hoạt động ngoại khoá">
+    
+    <div class="link-section">
+        <a href="#">Theo dõi lịch hoạt động các CLB_Thể thao</a>
+        <a href="#">Danh sách các câu lạc bộ</a>
+    </div>
+
+</body>
+</html>
