@@ -128,3 +128,6 @@ footer {
     font-size: 30px;
   }
 }
+body {
+  background: pink !important;
+}
