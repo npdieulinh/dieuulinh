@@ -2,26 +2,34 @@
 <html lang="vi">
 <head>
     <meta charset="utf-8">
-    <title>CLB Ngoại khóa Hoàng Hoa Thám</title>
+    <title>CLB Ngoại khóa Nguyễn Bỉnh Khiêm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
         <div class="banner">
-            <h1>Câu lạc bộ ngoại khóa Trường Hoàng Hoa Thám</h1>
+            <div class="banner-content">
+                <h1>CLB NGOẠI KHÓA</h1>
+                <p>TRƯỜNG NGUYỄN BỈNH KHIÊM</p>
+                <a href="#explore" class="btn-main">Khám phá ngay</a>
+            </div>
         </div>
         
-        <div class="slogan-bar">
-            <div class="container-flex"> 
+        <div class="slogan-section">
+            <div class="container Jrow"> 
                 <div class="block_3">
+                    <div class="icon">⚡</div>
                     <h2>Năng động</h2>
                     <p>Hoạt động năng nổ và hiệu quả</p>
                 </div>
                 <div class="block_3">
+                    <div class="icon">🔥</div>
                     <h2>Đam mê</h2>
                     <p>Cháy hết mình trong các cuộc chơi</p> 
                 </div>
                 <div class="block_3">
+                    <div class="icon">🌟</div>
                     <h2>Toả sáng</h2>
                     <p>Giành những giải thưởng cao nhất</p> 
                 </div>
@@ -29,62 +37,52 @@
         </div>
     </header>
 
-    <main class="container-flex content-area">
-        <div class="column">
-            <h3>CLB Thể thao</h3>
-            <ul class="list-no-bullet">
-                <li>Bóng đá</li>
-                <li>Bóng chuyền</li>
-                <li>Bóng rổ</li>
-                <li>Cầu lông</li>
-                <li>Võ thuật</li>
-                <li>Bơi lội</li>
-            </ul>
-            <a href="thethao.html" class="btn-link">Chi tiết</a>
-        </div>
+    <main class="container py-5" id="explore">
+        <div class="grid-content">
+            <div class="card">
+                <h3>CLB Thể thao</h3>
+                <ul>
+                    <li>Bóng đá</li> <li>Bóng chuyền</li> <li>Bóng rổ</li>
+                    <li>Cầu lông</li> <li>Võ thuật</li> <li>Bơi lội</li>
+                </ul>
+                <a href="thethao.html" class="link-detail">Chi tiết →</a>
+            </div>
 
-        <div class="column">
-            <h3>Học siêu - Chơi đỉnh</h3>
-            <p>Các thành tích đạt được:</p>
-            <ul class="list-no-bullet"> 
-                <li>03 HCV Bơi lội</li>
-                <li>02 HCV, 06 HCB và 05 HCĐ Võ thuật</li>
-                <li>01 giải ba môn Bóng đá nam</li>
-                <li>01 giải nhì Hội thi biểu diễn âm nhạc</li>
-            </ul>
-        </div>
+            <div class="card featured">
+                <h3>Thành tích nổi bật</h3>
+                <div class="medal-list">
+                    <p>🥇 03 HCV Bơi lội</p>
+                    <p>🥈 02 HCV, 06 HCB Võ thuật</p>
+                    <p>🥉 01 Giải ba Bóng đá nam</p>
+                    <p>🎵 01 Giải nhì Âm nhạc</p>
+                </div>
+            </div>
 
-        <div class="column">
-            <h3>CLB Nghệ thuật</h3>
-            <ul class="list-no-bullet"> 
-                <li>Mĩ thuật</li>
-                <li>Nhiếp ảnh</li>
-                <li>Âm nhạc</li>
-                <li>Khiêu vũ</li>
-            </ul>
-            <a href="nghethuat.html" class="btn-link">Chi tiết</a>
+            <div class="card">
+                <h3>CLB Nghệ thuật</h3>
+                <ul> 
+                    <li>Mĩ thuật</li> <li>Nhiếp ảnh</li>
+                    <li>Âm nhạc</li> <li>Khiêu vũ</li>
+                </ul>
+                <a href="nghethuat.html" class="link-detail">Chi tiết →</a>
+            </div>
         </div>
     </main>
 
-    <footer class="main-footer">
-        <div class="container-flex"> 
-            <div style="flex: 2;">
-                <p><strong>Liên hệ:</strong></p>
-                <ul class="list-no-bullet"> 
-                    <li>Điện thoại: 012345678</li>
-                    <li>Website: <a href="index.html">CLB Ngoại khoá Trường THPT Hoàng Hoa Thám</a></li>
-                </ul>
+    <footer>
+        <div class="footer-top">Website theo thiết kế mới 2024</div>
+        <div class="container footer-grid">
+            <div>
+                <h4>Liên hệ</h4>
+                <p>📞 012345678</p>
+                <p>🌐 <a href="index.html">clb-nbk.edu.vn</a></p>
             </div>
-            
-            <div style="flex: 1;">
-                <p><strong>Xem chi tiết:</strong></p>
-                <ul class="list-no-bullet">
-                    <li><a href="thethao.html">Trang web CLB Thể thao</a></li>
-                    <li><a href="nghethuat.html">Trang web CLB Nghệ thuật</a></li>
-                </ul>
+            <div>
+                <h4>Khám phá</h4>
+                <p><a href="thethao.html">CLB Thể thao</a></p>
+                <p><a href="nghethuat.html">CLB Nghệ thuật</a></p>
             </div>
         </div>
-        <div class="footer-bottom">Website theo thiết kế mới</div>
     </footer>
 </body>
 </html>
