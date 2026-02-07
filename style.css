@@ -1,87 +1,59 @@
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-.container-flex {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.banner {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/img-0.jpg") no-repeat center center;
+ .banner {
+    background: url("img/img-0.jpg") no-repeat center center;
     background-size: cover;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    text-align: center !important; 
+    color: darkred !important;
 }
 
-
-.slogan-bar {
-    background-color: #8cc671;
-    color: #000;
-    text-align: center;
+.slogan {
+    text-align: center !important;
+    width: 100%;
+}
+.Jrow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -1px; 
+    max-width: 100%;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    background-color: lightgrey;
 }
 
 .block_3 {
-    flex: 1;
+    flex: 0 0 auto;
+    width: 30%;
+    margin: 10px;
+}
+
+.cell_img {
+    width: 50%;
+}
+
+.cell_text {
+    width: 50%;
+    padding-left: 5rem;
+}
+
+img, .img {
+    width: 100%;
+    height: auto; 
+}
+
+footer {
+    background-color: lightgrey;
+    margin: 1px;
     padding: 10px;
 }
 
-
-.content-area {
-    padding: 40px 20px;
-    text-align: center;
+a {
+    color: navy;
+    text-align: left;
+    text-decoration: none;
 }
 
-.column {
-    flex: 1;
-    min-width: 250px;
-    padding: 20px;
-}
-
-.list-no-bullet {
+.menu {
+    font-size: 120%;
     list-style: none;
-    padding: 0;
-}
-
-.btn-link {
-    display: inline-block;
-    margin-top: 10px;
-    color: #0056b3;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-
-.main-footer {
-    background-color: #0056b3;
-    color: white;
-    padding: 20px 0 0 0;
-}
-
-.main-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.main-footer a:hover {
-    text-decoration: underline;
-}
-
-.footer-bottom {
-    background-color: #004494;
-    text-align: center;
-    padding: 10px;
-    font-style: italic;
-    margin-top: 20px;
 }
