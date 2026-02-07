@@ -33,7 +33,28 @@ body {
   justify-content: center;
   text-align: center;
 }
+.banner {
+  position: relative;
+  background: url("img/img-0.jpg") center/cover no-repeat;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
+.banner .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.banner h1 {
+  position: relative;
+  color: #fff;
+  font-size: 40px;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.85);
+}
 .banner h1 {
   color: #fff;
   font-size: 38px;
