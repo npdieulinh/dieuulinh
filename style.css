@@ -1,87 +1,136 @@
+/* Biến màu sắc để dễ quản lý */
+:root {
+    --primary-color: #2e7d32;
+    --accent-color: #81c784;
+    --dark-bg: #1a1a1a;
+    --glass: rgba(255, 255, 255, 0.95);
+}
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
+    color: #333;
     line-height: 1.6;
+    background-color: #f8f9fa;
 }
 
-.container-flex {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
+/* Banner xịn xò */
 .banner {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("img/img-0.jpg") no-repeat center center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url("img/img-0.jpg") no-repeat center center;
     background-size: cover;
-    height: 400px;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-align: center;
 }
 
+.banner h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    letter-spacing: 5px;
+}
 
-.slogan-bar {
-    background-color: #8cc671;
-    color: #000;
-    text-align: center;
+.btn-main {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn-main:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Slogan Section với dải màu Gradient */
+.slogan-section {
+    background: linear-gradient(135deg, #2e7d32, #81c784);
+    padding: 60px 0;
+    color: white;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.Jrow {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
 }
 
 .block_3 {
     flex: 1;
-    padding: 10px;
-}
-
-
-.content-area {
-    padding: 40px 20px;
     text-align: center;
 }
 
-.column {
-    flex: 1;
-    min-width: 250px;
-    padding: 20px;
+.icon { font-size: 2.5rem; margin-bottom: 10px; }
+
+/* Grid Nội dung & Card */
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: -50px; /* Đẩy nội dung đè lên phần xanh một chút */
 }
 
-.list-no-bullet {
-    list-style: none;
-    padding: 0;
+.card {
+    background: var(--glass);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
 }
 
-.btn-link {
-    display: inline-block;
-    margin-top: 10px;
-    color: #0056b3;
-    text-decoration: none;
-    font-weight: bold;
+.card:hover {
+    transform: translateY(-10px);
 }
 
-
-.main-footer {
-    background-color: #0056b3;
+.card.featured {
+    background: var(--dark-bg);
     color: white;
-    padding: 20px 0 0 0;
 }
 
-.main-footer a {
-    color: #fff;
-    text-decoration: none;
+.card h3 {
+    border-left: 5px solid var(--accent-color);
+    padding-left: 15px;
+    margin-bottom: 20px;
 }
 
-.main-footer a:hover {
-    text-decoration: underline;
+/* Footer */
+footer {
+    background: var(--dark-bg);
+    color: #999;
+    padding: 50px 0 20px;
+    margin-top: 100px;
 }
 
-.footer-bottom {
-    background-color: #004494;
+.footer-top {
     text-align: center;
-    padding: 10px;
-    font-style: italic;
-    margin-top: 20px;
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 30px;
 }
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.footer-grid h4 { color: white; margin-bottom: 15px; }
+.footer-grid a { color: #999; text-decoration: none; }
+.footer-grid a:hover { color: var(--accent-color); }
+
+.py-5 { padding-top: 5rem; padding-bottom: 5rem; }
